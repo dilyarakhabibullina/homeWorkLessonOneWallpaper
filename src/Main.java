@@ -6,9 +6,9 @@ public class Main {
         int rollWidthInSm = 53;
         int rollLengthInSm = 1000;
         int roomPerimetr = (roomLength + roomWidth) * 2;
-        int rollPieces = roomPerimetr * 100 / rollWidthInSm;
+        int rollPieces = roomPerimetr * 100 / rollWidthInSm + 1;
         int piecesInOneRoll = rollLengthInSm / 100 / roomHeight;
-        int rollAmount = rollPieces / piecesInOneRoll + 1;
+        int rollAmount = rollPieces / piecesInOneRoll;
         System.out.println("Вам нужно купить " + rollAmount + " рулонов обоев");
     }
 }
